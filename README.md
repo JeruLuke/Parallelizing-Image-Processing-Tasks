@@ -8,7 +8,7 @@ Parallelizing this task saves a lot of time in this aspect. Here I have used the
 
 ## My Contribution
 
-I extended this idea to perform image processing tasks on a collection of images on my desktop. The pre-processing task I decided to use was (addWeighted from OpenCV)[https://docs.opencv.org/2.4/modules/core/doc/operations_on_arrays.html#addweighted]. Technically speaking, it finds a weighted sum of two image arrays. In layman terms, it simply adds two images together assigning a different weight to each one, offering a blending or transpareny effect. See how it is used (here)[https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_core/py_image_arithmetics/py_image_arithmetics.html#image-blending].
+I extended this idea to perform image processing tasks on a collection of images on my desktop. The pre-processing task I decided to use was [addWeighted from OpenCV](https://docs.opencv.org/2.4/modules/core/doc/operations_on_arrays.html#addweighted). Technically speaking, it finds a weighted sum of two image arrays. In layman terms, it simply adds two images together assigning a different weight to each one, offering a blending or transpareny effect. See how it is used [here](https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_core/py_image_arithmetics/py_image_arithmetics.html#image-blending).
 
 I performed this function with and without joblib for a bunch of images on my desktop and compared their performances. I have also mentioned the number of images and the collective size of those images used.
 
