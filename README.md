@@ -27,6 +27,12 @@ The result of this script on my console:
     Using Joblib : 0.0940001011 seconds
     Without Joblib : 15.3860001564 seconds
     
+**Using the Argument parser**
+
+If you are not comfortable with changing the path in the script befroe running, you can use `parallelizing_loops_argparser.py` and pass the desired path as an argument:
+
+`python parallelizing_loops_argparser.py --path <place your desired path>`
+
 ## Other Approaches
 
 You also might want to check out some questions on this subject on [stackoverflow](https://stackoverflow.com/):
