@@ -26,3 +26,17 @@ The result of this script on my console:
 
     Using Joblib : 0.0940001011 seconds
     Without Joblib : 15.3860001564 seconds
+    
+## Other Approaches
+
+You also might want to check out some questions on this subject on [stackoverflow](https://stackoverflow.com/):
+
+1. [How to use Python and OpenCV with multiprocessing?](https://stackoverflow.com/questions/32775555/how-to-use-python-and-opencv-with-multiprocessing)
+
+Here the use of in-built `multiprocessing` library is demonstrated.
+
+2. [How to perform logical operation and logical indexing using VIPS in Python?](https://stackoverflow.com/questions/33195055/how-to-perform-logical-operation-and-logical-indexing-using-vips-in-python)
+
+An inspiring 3rd party tool called [VIPS](https://jcupitt.github.io/pyvips/README.html) is demonstrated.
+
+3. [How can I process images with OpenCV in parallel using multiprocessing?](https://stackoverflow.com/questions/50935330/how-can-i-process-images-with-opencv-in-parallel-using-multiprocessing/51336402#51336402)
