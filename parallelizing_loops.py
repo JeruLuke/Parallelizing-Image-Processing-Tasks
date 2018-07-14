@@ -23,7 +23,8 @@ def joblib_loop():
         if any(c in f for c in img_formats):
             img = cv2.imread(os.path.join(path, f))
             r = delayed(weight)(img)
-            cv2.imwrite(os.path.join(new_dir, f + '_add_weighted_.jpg'), r)
+            # uncomment this line if you want to save the processed image
+            #cv2.imwrite(os.path.join(new_dir, f + '_add_weighted_.jpg'), r)
 
 elapsed_time = time.time() - start_time
 print('Using Joblib : {} seconds'.format(elapsed_time))
@@ -40,7 +41,8 @@ for f in os.listdir(path):
     if any(c in f for c in img_formats):
         img = cv2.imread(os.path.join(path, f))
         r = weight(img)
-        cv2.imwrite(os.path.join(new_dir, f + '_add_weighted_.jpg'), r)
+        # uncomment this line if you want to save the processed image
+        #cv2.imwrite(os.path.join(new_dir, f + '_add_weighted_.jpg'), r)
         
 elapsed_time = time.time() - start_time
 print('Without Joblib : {} seconds'.format(elapsed_time))
